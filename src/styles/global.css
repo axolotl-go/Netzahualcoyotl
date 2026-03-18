@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #b42222;
+  --color-primary-dark: #8b1a1a;
+  --color-academic-charcoal: #1a1a1a;
+  --color-background-light: #fafafa;
+
+  --font-display: "Inter", sans-serif;
+
+  --radius-default: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.25rem;
+}
+
+.section-divider {
+  position: relative;
+}
+.section-divider::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 4px;
+  background-color: #b42222;
+}

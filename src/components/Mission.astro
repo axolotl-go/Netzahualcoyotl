@@ -1,0 +1,55 @@
+---
+import { Radar, Eye } from "@lucide/astro";
+---
+
+<section class="py-24 px-6 lg:px-20 bg-white" id="nosotros">
+  <div class="max-w-7xl mx-auto">
+    <div class="flex flex-col lg:flex-row gap-16 items-center">
+      <div class="lg:w-1/3 space-y-6">
+        <h2 class="text-primary text-sm font-black uppercase tracking-[0.3em]">
+          Nuestros Pilares
+        </h2>
+        <h3
+          class="text-4xl lg:text-5xl font-900 text-academic-charcoal leading-tight"
+        >
+          Compromiso con la Formación Humana
+        </h3>
+        <p class="text-slate-600 text-lg leading-relaxed">
+          En la Secundaria General No. 10, no solo impartimos clases;
+          construimos el cimiento de la sociedad futura con integridad y
+          disciplina.
+        </p>
+      </div>
+      <div class="lg:w-2/3 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div
+          class="p-10 rounded-2xl bg-slate-50 border-l-4 border-primary hover:shadow-xl transition-all group"
+        >
+          <div
+            class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all"
+          >
+            <Radar />
+          </div>
+          <h4 class="text-2xl font-800 mb-4">Misión</h4>
+          <p class="text-slate-600 leading-relaxed">
+            Desarrollar competencias para la vida a través de un pensamiento
+            crítico, preparando alumnos capaces de transformar su entorno.
+          </p>
+        </div>
+        <div
+          class="p-10 rounded-2xl bg-slate-50 border-l-4 border-primary hover:shadow-xl transition-all group"
+        >
+          <div
+            class="w-16 h-16 bg-primary/10 rounded-2xl flex items-center justify-center text-primary mb-6 group-hover:bg-primary group-hover:text-white transition-all"
+          >
+            <Eye />
+          </div>
+          <h4 class="text-2xl font-800 mb-4">Visión</h4>
+          <p class="text-slate-600 leading-relaxed">
+            Ser la institución de educación secundaria referente en Coahuila por
+            su innovación pedagógica y calidad humana.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

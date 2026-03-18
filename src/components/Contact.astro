@@ -1,0 +1,95 @@
+---
+import { Mail, Phone, Map } from "@lucide/astro";
+---
+
+<section class="py-24 px-6 lg:px-20 bg-slate-50">
+  <div class="max-w-7xl mx-auto">
+    <div
+      class="bg-white rounded-[2.5rem] overflow-hidden shadow-2xl border border-slate-100 flex flex-col lg:flex-row"
+    >
+      <div class="p-12 lg:w-2/5 bg-academic-charcoal text-white">
+        <h3 class="text-4xl font-900 mb-8">Centro de Atención</h3>
+        <div class="space-y-8">
+          <div class="flex items-start gap-6">
+            <div class="p-3 bg-primary rounded-xl text-white">
+              <Phone />
+            </div>
+            <div>
+              <p
+                class="text-primary text-xs font-black uppercase tracking-widest mb-1"
+              >
+                Teléfono
+              </p>
+              <p class="text-xl font-bold">+52 871 713 0000</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="p-3 bg-primary rounded-xl text-white">
+              <Mail />
+            </div>
+            <div>
+              <p
+                class="text-primary text-xs font-black uppercase tracking-widest mb-1"
+              >
+                Email
+              </p>
+              <p class="text-xl font-bold">contacto@secundaria10trc.edu.mx</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-6">
+            <div class="p-3 bg-primary rounded-xl text-white">
+              <Map />
+            </div>
+            <div>
+              <p
+                class="text-primary text-xs font-black uppercase tracking-widest mb-1"
+              >
+                Ubicación
+              </p>
+              <p class="text-slate-300">
+                Av. Universidad S/N, Col. Sol de Oriente, Torreón, Coahuila. CP
+                27000
+              </p>
+            </div>
+          </div>
+          <div class="pt-10">
+            <p
+              class="text-slate-500 text-sm uppercase font-black tracking-widest mb-4"
+            >
+              Horario de Oficina
+            </p>
+            <div class="flex justify-between border-b border-white/10 py-2">
+              <span>Lunes - Viernes</span>
+              <span class="font-bold">7:00 - 20:30</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="lg:w-3/5 h-150 lg:h-auto relative bg-slate-200">
+        <!-- Placeholder for Map -->
+        <div
+          class="absolute inset-0 flex items-center justify-center bg-slate-100"
+        >
+          <div class="text-center p-12">
+            <div
+              class="w-20 h-20 bg-primary/10 rounded-full flex items-center justify-center text-primary mx-auto mb-6"
+            >
+              <Map size={30} />
+            </div>
+            <h4 class="text-2xl font-900 text-academic-charcoal mb-2">
+              Visítanos en Torreón
+            </h4>
+            <p class="text-slate-500 mb-8">
+              Ubicación estratégica en la zona Oriente para tu comodidad.
+            </p>
+            <button
+              class="bg-primary text-white px-8 py-3 rounded-xl font-black shadow-lg"
+            >
+              ABRIR EN GOOGLE MAPS
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
