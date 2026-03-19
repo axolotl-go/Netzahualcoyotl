@@ -3,17 +3,10 @@ import { School } from "@lucide/astro";
 ---
 
 <header
-  class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md border-b-2 border-primary/10 px-6 lg:px-20 py-4"
+  class="fixed w-full top-0 z-50 max-h-24 bg-white/95 backdrop-blur-md border-b-2 border-primary/10 px-6 lg:px-20 py-4"
 >
   <div class="max-w-7xl mx-auto flex items-center justify-between">
     <div class="flex items-center gap-4">
-      <div
-        class="size-12 bg-primary rounded-xl flex items-center justify-center text-white shadow-lg shadow-primary/20"
-      >
-        <span class="material-symbols-outlined text-3xl">
-          <School />
-        </span>
-      </div>
       <div class="flex flex-col">
         <h2
           class="text-academic-charcoal text-xl font-900 leading-none tracking-tight"
@@ -49,7 +42,7 @@ import { School } from "@lucide/astro";
       >
     </nav>
     <button
-      class="bg-academic-charcoal hover:bg-primary text-white px-8 py-3 rounded-lg text-sm font-black transition-all shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+      class="hidden sm:block bg-academic-charcoal hover:bg-primary text-white px-4 lg:px-8 py-2 lg:py-3 rounded-lg text-[10px] lg:text-sm font-black transition-all shadow-xl hover:-translate-y-0.5 active:translate-y-0"
     >
       INSCRIPCIONES
     </button>
