@@ -1,50 +1,59 @@
 ---
-import { School } from "@lucide/astro";
+import navigation from "../data/nav.json";
+
+var Open = true;
 ---
 
 <header
-  class="fixed w-full top-0 z-50 max-h-24 bg-white/95 backdrop-blur-md border-b-2 border-primary/10 px-6 lg:px-20 py-4"
+  class="fixed top-0 w-full z-50 bg-white/90 backdrop-blur-lg border-b border-slate-200"
 >
-  <div class="max-w-7xl mx-auto flex items-center justify-between">
-    <div class="flex items-center gap-4">
-      <div class="flex flex-col">
-        <h2
-          class="text-academic-charcoal text-xl font-900 leading-none tracking-tight"
+  <div
+    class="max-w-7xl mx-auto flex items-center justify-between px-6 lg:px-20 h-20"
+  >
+    <!-- Branding -->
+    <div class="flex items-center gap-3">
+      <div class="flex flex-col leading-tight">
+        <h1
+          class="text-lg lg:text-xl font-extrabold tracking-tight text-slate-900"
         >
           SECUNDARIA GENERAL NO. 10
-        </h2>
+        </h1>
         <span
-          class="text-primary text-[10px] font-bold tracking-widest uppercase mt-1"
-          >Netzahualcóyotl</span
+          class="text-[10px] font-bold tracking-[0.2em] text-primary uppercase"
         >
+          Netzahualcóyotl
+        </span>
       </div>
     </div>
-    <nav class="hidden lg:flex items-center gap-10">
-      <a
-        class="text-slate-600 hover:text-primary transition-all text-sm font-bold uppercase tracking-wider"
-        href="#inicio">Inicio</a
-      >
-      <a
-        class="text-slate-600 hover:text-primary transition-all text-sm font-bold uppercase tracking-wider"
-        href="#nosotros">Nosotros</a
-      >
-      <a
-        class="text-slate-600 hover:text-primary transition-all text-sm font-bold uppercase tracking-wider"
-        href="#oferta">Oferta</a
-      >
-      <a
-        class="text-slate-600 hover:text-primary transition-all text-sm font-bold uppercase tracking-wider"
-        href="#instalaciones">Instalaciones</a
-      >
-      <a
-        class="text-slate-600 hover:text-primary transition-all text-sm font-bold uppercase tracking-wider"
-        href="#contacto">Contacto</a
-      >
+
+    <!-- Desktop Nav -->
+    <nav class="hidden lg:flex items-center gap-8">
+      {
+        navigation.data.map((item) => (
+          <a
+            href={item.link}
+            class="relative text-sm font-semibold tracking-wide text-slate-600 hover:text-primary transition-colors duration-200 after:absolute after:left-0 after:-bottom-1 after:h-[2px] after:w-0 after:bg-primary after:transition-all hover:after:w-full"
+          >
+            {item.title}
+          </a>
+        ))
+      }
     </nav>
+
+    <!-- CTA -->
+    <div class="hidden sm:flex items-center gap-4">
+      <button
+        class="bg-slate-900 hover:bg-primary text-white text-xs lg:text-sm font-bold px-5 py-2.5 rounded-md transition-all shadow-md hover:-translate-y-[1px] active:translate-y-0"
+      >
+        INSCRIPCIONES
+      </button>
+    </div>
+
+    <!-- Mobile Toggle -->
     <button
-      class="hidden sm:block bg-academic-charcoal hover:bg-primary text-white px-4 lg:px-8 py-2 lg:py-3 rounded-lg text-[10px] lg:text-sm font-black transition-all shadow-xl hover:-translate-y-0.5 active:translate-y-0"
+      class="lg:hidden flex items-center justify-center w-10 h-10 rounded-md border border-slate-300"
     >
-      INSCRIPCIONES
+      -
     </button>
   </div>
 </header>

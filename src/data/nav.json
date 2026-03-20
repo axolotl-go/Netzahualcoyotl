@@ -1,0 +1,25 @@
+{
+  "data": [
+    {
+      "title": "Inicio",
+      "link": "#inicio"
+    },
+    {
+        "title":"Nosotros",
+        "link":"#nosotros"
+    },
+    {
+        "title":"Oferta",
+        "link":"#oferta"
+    },
+    {
+        "title":"Instalaciones",
+        "link":"#instalaciones"
+    },
+    {
+     "title":"Contacto",
+     "link":"#contacto"
+    
+    }
+  ]
+}
