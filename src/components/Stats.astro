@@ -1,28 +1,37 @@
+---
+const data = [
+  {
+    number: "40+",
+    text: "Años de Tradición",
+  },
+  {
+    number: "100%",
+    text: "Acreditados SEP",
+  },
+  {
+    number: "15+",
+    text: "Talleres Técnicos",
+  },
+  {
+    number: "1200+",
+    text: "Alumnos Activos",
+  },
+];
+---
+
 <div
-  class="bg-primary py-12 px-6 lg:px-20 -mt-16 relative z-20 max-w-[1100px] mx-auto rounded-2xl shadow-2xl grid grid-cols-2 md:grid-cols-4 gap-8"
+  class="bg-primary py-10 px-6 lg:px-20 -mt-16 relative z-20 max-w-227 mx-auto rounded-2xl shadow-2xl grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-4 m-5"
 >
-  <div class="text-center text-white border-r border-white/10 last:border-none">
-    <div class="text-4xl font-900">40+</div>
-    <div class="text-[10px] font-bold uppercase tracking-widest opacity-80">
-      Años de Tradición
-    </div>
-  </div>
-  <div class="text-center text-white border-r border-white/10 last:border-none">
-    <div class="text-4xl font-900">100%</div>
-    <div class="text-[10px] font-bold uppercase tracking-widest opacity-80">
-      Acreditados SEP
-    </div>
-  </div>
-  <div class="text-center text-white border-r border-white/10 last:border-none">
-    <div class="text-4xl font-900">15+</div>
-    <div class="text-[10px] font-bold uppercase tracking-widest opacity-80">
-      Talleres Técnicos
-    </div>
-  </div>
-  <div class="text-center text-white last:border-none">
-    <div class="text-4xl font-900">1200+</div>
-    <div class="text-[10px] font-bold uppercase tracking-widest opacity-80">
-      Alumnos Activos
-    </div>
-  </div>
+  {
+    data.map((item) => {
+      return (
+        <div class="text-center text-white md:border-r border-white/10 last:border-none">
+          <div class="text-4xl font-900">{item.number}</div>
+          <div class="text-[10px] font-bold uppercase tracking-widest opacity-80">
+            {item.text}
+          </div>
+        </div>
+      );
+    })
+  }
 </div>
