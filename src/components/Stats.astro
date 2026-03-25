@@ -1,29 +1,12 @@
 ---
-const data = [
-  {
-    number: "40+",
-    text: "Años de Tradición",
-  },
-  {
-    number: "100%",
-    text: "Acreditados SEP",
-  },
-  {
-    number: "15+",
-    text: "Talleres Técnicos",
-  },
-  {
-    number: "1200+",
-    text: "Alumnos Activos",
-  },
-];
+import stats from "../data/stats.json";
 ---
 
 <div
   class="bg-primary py-10 px-6 lg:px-20 -mt-16 relative z-20 max-w-227 mx-auto rounded-2xl shadow-2xl grid grid-cols-2 md:grid-cols-4 gap-y-10 gap-x-4 m-5"
 >
   {
-    data.map((item) => {
+    stats.data.map((item: any) => {
       return (
         <div class="text-center text-white md:border-r border-white/10 last:border-none">
           <div class="text-4xl font-900">{item.number}</div>

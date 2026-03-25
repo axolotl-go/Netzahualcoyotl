@@ -1,12 +1,11 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Menu, X, GraduationCap } from "lucide-react";
-import navigation from "../data/nav.json";
+import navigation from "../data/navigation.json";
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const drawerRef = useRef<HTMLDivElement>(null);
-
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 10);
     window.addEventListener("scroll", onScroll, { passive: true });

@@ -1,51 +1,56 @@
 <section
-  class="relative min-h-[85vh] flex items-center overflow-hidden"
+  class="relative min-h-[70vh] md:min-h-[85vh] flex items-center overflow-hidden"
   id="inicio"
 >
+  <!-- Background -->
   <div class="absolute inset-0 z-0">
     <img
-      alt="Modern School Campus"
-      class="w-full h-full object-cover"
       src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKr39Hdz824hggdIBzUttufdUQ1mqLfbIBmQb32X-V-lqkLSmqhKLsO-q6Wf-1n3_P98TXoeojP3eQl1fMrQJFSWX9vAZPWwuG4_oh2uQum_TqqsfayW5HF-WENWdoEEheW_6jQAdZv_mRDRgFEgjnF8s-AtXOAFquqiGozA05EFnaUhpCyrGoLnk3vz_bs9c6oscWQsl-M2bhnMJZV2jEoFF78MM0pDhJihxNnEUNWMXOGAd_sacsyffa3IoAZqAq-9TgGvWF28gN"
+      alt="Campus escolar"
+      class="w-full h-full object-cover"
+      loading="eager"
     />
-    <div
-      class="absolute inset-0 bg-gradient-to-r from-academic-charcoal/95 via-academic-charcoal/80 to-transparent"
-    >
-    </div>
+
+    <!-- Gradiente ajustado -->
+    <div class="absolute inset-0 bg-gradient-to-b md:bg-gradient-to-r from-academic-charcoal/95 via-academic-charcoal/85 to-transparent"></div>
   </div>
-  <div class="max-w-[1280px] mx-auto px-6 lg:px-20 relative z-10 w-full">
-    <div class="max-w-3xl space-y-8">
-      <div
-        class="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/30 px-4 py-2 rounded-full"
-      >
-        <span class="flex h-2 w-2 rounded-full bg-primary animate-pulse"></span>
-        <span
-          class="text-primary-dark text-xs font-black uppercase tracking-widest"
-          >Excelencia Educativa en Torreón</span
-        >
+
+  <!-- Content -->
+  <div class="max-w-[1280px] mx-auto px-4 md:px-10 lg:px-20 relative z-10 w-full">
+    <div class="max-w-3xl space-y-6 md:space-y-8">
+
+      <!-- Badge -->
+      <div class="inline-flex items-center gap-2 bg-primary/20 backdrop-blur-sm border border-primary/30 px-3 py-1.5 rounded-full">
+        <span class="h-2 w-2 rounded-full bg-primary animate-pulse"></span>
+        <span class="text-primary text-[10px] md:text-xs font-bold uppercase tracking-wider">
+          Excelencia Educativa en Torreón
+        </span>
       </div>
-      <h1
-        class="text-white text-5xl lg:text-7xl font-900 leading-tight tracking-tight"
-      >
+
+      <!-- Title -->
+      <h1 class="text-white text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-extrabold leading-tight tracking-tight">
         Forjando Liderazgo y
-        <span class="text-primary italic">Conocimiento</span>
+        <span class="text-primary italic block sm:inline">
+          Conocimiento
+        </span>
       </h1>
-      <p class="text-slate-300 text-xl font-medium leading-relaxed max-w-2xl">
-        Institución líder en Torreón, Coahuila. Dedicados a la formación
-        integral de jóvenes con visión crítica, valores sólidos y excelencia
-        académica.
+
+      <!-- Description -->
+      <p class="text-slate-300 text-base sm:text-lg md:text-xl leading-relaxed max-w-xl">
+        Formación integral con visión crítica, valores sólidos y excelencia académica.
       </p>
-      <div class="flex flex-wrap gap-5 pt-4">
-        <button
-          class="bg-primary hover:bg-primary-dark text-white px-10 py-5 rounded-xl text-lg font-black shadow-2xl shadow-primary/40 transition-all hover:scale-105"
-        >
-          VER OFERTA ACADÉMICA
+
+      <!-- Actions -->
+      <div class="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2">
+
+        <button class="w-full sm:w-auto bg-primary hover:bg-primary-dark text-white px-6 py-3 md:px-8 md:py-4 rounded-lg text-sm md:text-base font-bold shadow-lg transition-all active:scale-95">
+          VER OFERTA
         </button>
-        <button
-          class="bg-white/10 backdrop-blur-md text-white border-2 border-white/20 px-10 py-5 rounded-xl text-lg font-black hover:bg-white hover:text-academic-charcoal transition-all"
-        >
-          CONOCE EL PLANTEL
+
+        <button class="w-full sm:w-auto bg-white/10 backdrop-blur-md text-white border border-white/20 px-6 py-3 md:px-8 md:py-4 rounded-lg text-sm md:text-base font-bold hover:bg-white hover:text-academic-charcoal transition-all active:scale-95">
+          CONOCER PLANTEL
         </button>
+
       </div>
     </div>
   </div>

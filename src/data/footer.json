@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "title": "Explora",
+      "content": [
+        "Página Principal",
+        "Identidad Institucional",
+        "Programas de Estudio",
+        "Nuestras Áreas"
+      ]
+    },
+    {
+      "title": "Administrativo",
+      "content": [
+        "Proceso de Inscripción",
+        "Becas y Apoyos",
+        "Calendario Escolar",
+        "Aviso de Privacidad"
+      ]
+    }
+  ]
+}
