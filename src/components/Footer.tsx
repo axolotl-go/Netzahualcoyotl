@@ -8,9 +8,9 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-16 mb-20">
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-4 mb-8">
-              <div className="size-12 bg-primary rounded-xl flex items-center justify-center text-white">
+              <div className="size-12 rounded-xl flex items-center justify-center text-white">
                 <span className="material-symbols-outlined text-3xl">
-                  <School />
+                  <img src="/logo.png" alt="Logo" className="w-full h-full" />
                 </span>
               </div>
               <h3 className="text-2xl font-900 tracking-tight">
@@ -54,7 +54,7 @@ const Footer = () => {
                   <li key={index}>
                     <a
                       className="text-slate-400 hover:text-white transition-colors font-medium"
-                      href="#inicio"
+                      href={content.split(" ").join("-").toLowerCase()}
                     >
                       {content}
                     </a>
@@ -70,7 +70,7 @@ const Footer = () => {
             Coahuila.
           </p>
           <p className="font-bold text-slate-400 tracking-widest uppercase text-[10px]">
-            C.C.T. 05DES0010X
+            C.C.T. 05DES005P
           </p>
         </div>
       </div>

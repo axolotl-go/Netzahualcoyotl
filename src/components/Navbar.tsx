@@ -51,8 +51,8 @@ const Navbar = () => {
             className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
             aria-label="Secundaria General No. 10 – Inicio"
           >
-            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-white transition-all duration-200 shrink-0">
-              <GraduationCap size={18} strokeWidth={2.2} />
+            <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary/10 text-primary group-hover:text-white transition-all duration-200 shrink-0">
+              <img src="/logo.png" alt="Logo" className="w-full h-full" />
             </div>
             <div className="flex flex-col leading-none">
               <span className="text-[13px] sm:text-sm font-extrabold tracking-tight text-slate-900 uppercase">
