@@ -70,7 +70,7 @@ const Footer = () => {
             Coahuila.
           </p>
           <p className="font-bold text-slate-400 tracking-widest uppercase text-[10px]">
-            C.C.T. 05DES005P
+            C.C.T. 05ECB0010T
           </p>
         </div>
       </div>

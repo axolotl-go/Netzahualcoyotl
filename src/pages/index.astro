@@ -1,14 +1,14 @@
 ---
 import Hero from "../components/Hero.astro";
-import Nav from "../components/Nav.astro";
 import Layout from "../layouts/Layout.astro";
 import Stats from "../components/Stats.astro";
 import Mission from "../components/Mission.astro";
 import Offer from "../components/Offer.astro";
-import Facilities from "../components/Facilities.astro";
+import Facilities from "../components/Facilities.tsx";
 import Footer from "../components/Footer";
 import Contact from "../components/Contact.astro";
 import Navbar from "../components/Navbar";
+import ModelViewer from "../components/ModelViewer";
 ---
 
 <Layout>
@@ -19,8 +19,8 @@ import Navbar from "../components/Navbar";
     <Stats />
     <Mission />
     <Offer />
-    <Facilities />
+    <Facilities client:load />
     <Contact />
   </main>
-    <Footer />
+  <Footer />
 </Layout>
