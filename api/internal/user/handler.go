@@ -94,8 +94,8 @@ func Login(c *fiber.Ctx) error {
 		Value:    token,
 		Path:     "/",
 		HTTPOnly: true,
-		SameSite: "Lax",
-		Secure:   false,
+		SameSite: "None",
+		Secure:   true,
 	})
 
 	return c.Status(fiber.StatusOK).JSON(fiber.Map{

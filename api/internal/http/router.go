@@ -8,6 +8,10 @@ import (
 
 func SetupRouter(app *fiber.App) {
 
+	app.Get("/", func(c *fiber.Ctx) error {
+		return c.SendString("Hello, World!")
+	})
+
 	api := app.Group("/api")
 
 	api.Post("/user", user.Create)
