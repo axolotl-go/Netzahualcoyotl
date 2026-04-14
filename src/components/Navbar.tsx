@@ -47,7 +47,7 @@ const Navbar = () => {
         <div className="max-w-7xl mx-auto flex items-center justify-between px-5 sm:px-8 lg:px-16 h-18">
           {/* ── LOGO ── */}
           <a
-            href="#"
+            href="/"
             className="flex items-center gap-3 group focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary rounded-sm"
             aria-label="Secundaria General No. 10 – Inicio"
           >

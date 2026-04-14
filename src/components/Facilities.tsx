@@ -15,7 +15,7 @@ const data = [
     url: "/Modelos/lab_integradora.fbx",
   },
   {
-    title: "Salom",
+    title: "Salon",
     url: "/Modelos/Salon_integradora.fbx",
   },
 ];
