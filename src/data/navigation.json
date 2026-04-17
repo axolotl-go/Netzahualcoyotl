@@ -19,7 +19,10 @@
     {
      "title":"Contacto",
      "link":"#contacto"
-    
+    },
+    {
+     "title":"Ar",
+     "link":"/ar"
     }
   ]
 }

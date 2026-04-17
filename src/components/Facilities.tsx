@@ -22,7 +22,7 @@ const data = [
 
 const Facilities = () => {
   return (
-    <section className="py-24 px-6 lg:px-20 bg-white" id="instalaciones">
+    <section className="py-24 px-6 lg:px-20 " id="instalaciones">
       <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
         <h2 className="text-primary text-sm font-black uppercase tracking-[0.3em]">
           Infraestructura

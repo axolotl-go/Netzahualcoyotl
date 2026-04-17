@@ -83,10 +83,10 @@ const Navbar = () => {
           {/* ── CTA DESKTOP ── */}
           <div className="hidden lg:block">
             <a
-              href="#inscripciones"
+              href="#comentario"
               className="inline-flex items-center gap-2 bg-primary hover:bg-primary/90 active:scale-[0.97] text-white text-[13px] font-bold tracking-wider px-5 py-2.5 rounded-lg transition-all duration-150 shadow-sm shadow-primary/20 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
             >
-              Inscripciones
+              Contactanos
             </a>
           </div>
 
@@ -172,11 +172,11 @@ const Navbar = () => {
         {/* Drawer CTA */}
         <div className="px-4 pb-8 shrink-0">
           <a
-            href="#inscripciones"
+            href="#comentario"
             onClick={() => setOpen(false)}
             className="flex items-center justify-center w-full bg-primary hover:bg-primary/90 text-white text-sm font-bold tracking-wider px-5 py-3 rounded-lg transition-all focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
           >
-            Inscripciones
+            Contactanos
           </a>
         </div>
       </div>

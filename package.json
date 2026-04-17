@@ -18,12 +18,15 @@
     "@tailwindcss/vite": "^4.2.1",
     "@types/react": "^19.2.14",
     "@types/react-dom": "^19.2.3",
+    "aframe": "^1.7.1",
     "astro": "^6.0.5",
+    "i": "^0.3.7",
     "lucide-react": "^0.577.0",
+    "mind-ar": "^1.2.5",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "tailwindcss": "^4.2.1",
-    "three": "^0.183.2"
+    "three": "^0.150.1"
   },
   "devDependencies": {
     "@types/three": "^0.183.1"

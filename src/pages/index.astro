@@ -9,6 +9,7 @@ import Footer from "../components/Footer";
 import Contact from "../components/Contact.astro";
 import Navbar from "../components/Navbar";
 import ModelViewer from "../components/ModelViewer";
+import RegisterForm from "../components/RegisterForm";
 ---
 
 <Layout>
@@ -21,6 +22,7 @@ import ModelViewer from "../components/ModelViewer";
     <Offer />
     <Facilities client:load />
     <Contact />
+    <RegisterForm client:load />
   </main>
   <Footer />
 </Layout>
